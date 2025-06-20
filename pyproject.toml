@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools","wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "endstone-server-performance-test"
+version = "1.0.0"
+dependencies = ["endstone", "psutil"]
+
+[project.entry-points."endstone"]
+server-performance-test = "server_performance_test.performance_plugin:PerformancePlugin"
